@@ -1,30 +1,82 @@
 <!DOCTYPE html>
 <html>
     <title>
-
+        Rock-Paper-Scissor
     </title>
-
     <head>
 
     </head>
-
     <body>
 
+        <button onclick="
+            let computerMove=''; 
+            randomNumber = Math.random();
+            let result ='';
+            
+            if (randomNumber >= 0 && randomNumber <= 1 /3 ) {
+                computerMove = 'rock';
+                result = 'Tie';
+            } else if (randomNumber >= 1 / 3 && randomNumber <= 2 / 3) {
+                computerMove = 'paper';
+                result = 'Lose';
+            } else if (randomNumber >= 2 / 3 && randomNumber <= 3 / 3) {
+                computerMove = 'scissor';
+                result = 'Win'
+            }
+
+            alert (result);
+            console.log ('computerMove', computerMove);
+            console.log ('you:', result);
+            console.log(randomNumber)">
+            Rock 
+        </button>
+
+        <button onclick="
+            let computerMove=''; 
+            randomNumber = Math.random();
+            let result ='';
+            
+            if (randomNumber >= 0 && randomNumber <= 1 /3 ) {
+                computerMove = 'rock';
+                result = 'Win';
+            } else if (randomNumber >= 1 / 3 && randomNumber <= 2 / 3) {
+                computerMove = 'paper';
+                result = 'Tie';
+            } else if (randomNumber >= 2 / 3 && randomNumber <= 3 / 3) {
+                computerMove = 'scissor';
+                result = 'Lose'
+            }
+
+            alert (result);
+            console.log ('computerMove', computerMove);
+            console.log ('you:', result);
+            console.log(randomNumber)">
+            Paper
+        </button>
+        <button onclick="
+            let computerMove=''; 
+            randomNumber = Math.random();
+            let result ='';
+            
+            if (randomNumber >= 0 && randomNumber <= 1 /3 ) {
+                computerMove = 'rock';
+                result = 'Lose';
+            } else if (randomNumber >= 1 / 3 && randomNumber <= 2 / 3) {
+                computerMove = 'paper';
+                result = 'Win';
+            } else if (randomNumber >= 2 / 3 && randomNumber <= 3 / 3) {
+                computerMove = 'scissor';
+                result = 'Tie'
+            }
+
+            alert (result);
+            console.log ('computerMove', computerMove);
+            console.log ('you:', result);
+            console.log(randomNumber)">
+            Scissor 
+        </button>
     </body>
+    <script>
+        alert(result);
+    </script>
 </html>
-
-<button>
-    hii
-</button>
-
-<script>
-
-    /*function boolean(a , b) {
-        console.log (boolean (a > b));
-    }
-    boolean(5 , 7); */ 
-
-    console.log (3 > 5);
-    console.log (typeof true);
-    
-</script>
